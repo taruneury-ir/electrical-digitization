@@ -1,7 +1,7 @@
 {
-  "name": "Electrical Tools",
-  "short_name": "Elec Tools",
-  "description": "Cable Sizing, Transformer Sizing, Switchgear Sizing, CPP Sizer, Generator Operating Point Verification, Generator Transient Frequency and Motor Starting Voltage Drop. Developed by Tarun Goel.",
+  "name": "Electrical Engineering Suite",
+  "short_name": "EES",
+  "description": "EES · Electrical Engineering Suite — Design. Calculate. Analyse. Cable Sizing, Transformer Sizing, Switchgear Sizing, CPP Sizer, Generator Operating Point Verification, Generator Transient Frequency and Motor Starting Voltage Drop. Developed by Tarun Goel.",
   "start_url": "./index.html",
   "scope": "./",
   "id": "./",
