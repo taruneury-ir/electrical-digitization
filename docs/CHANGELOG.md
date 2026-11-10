@@ -1,6 +1,39 @@
 # Electrical Engineering Suite — change log
 
-App version V3.4 · service-worker cache `electrical-tools-gh-v3-4-5`
+App version V3.8 · service-worker cache `electrical-tools-gh-v3-4-9`
+
+## V3.8
+- Bottom tab bars now grow into the device safe area instead of reserving blank space under them, so the last row of buttons sits lower and the bar background fills the strip. Applied to every tool.
+- Home screen no longer holds a flexible gap above the theme picker — the content runs straight through to the footer.
+- Protection Coordination chart carries marked scales: long ticks and bold labels on every decade, short ticks with light labels on the 2 and 5 sub-divisions, on both axes.
+- Protection Coordination Help now lists the formula for every curve type — the three IEEE C37.112 inverse shapes with their constants, definite time, instantaneous, MCCB long-time, short-time with I²t in and out, instantaneous, thermal-magnetic, the gG fuse band and the motor overload class.
+- Launch animation runs for 2 seconds.
+- CPP Sizer icon redrawn from the supplied sketch: generator with its coupling mark, turbine, HRSG and stack on a ground line. Updated on the launcher and in the tool header.
+- All overlay reference curves in Protection Coordination now start switched off; changing the feeder type only clears the ones that no longer apply.
+
+## V3.7 — shorter input tabs
+- Number fields now pair two to a line in Protection Coordination, Arc Flash Estimator, Motor Starting Voltage Drop, CPP Sizer and Generator Operating Point. Fields with long labels, help text or a derived value underneath keep a full row, and selects, checkboxes and text areas still span the width. Touch targets stay at 44-46 px.
+- Protection Coordination device tabs carry a read-only chip strip at the top — device class, current settings, motor full-load current and relay model, or transformer rating and voltages — so the figures can be checked without scrolling back.
+
+## V3.6
+- Help button added to Short Circuit, Motor Starting, Arc Flash and Protection Coordination, each with How to use, Basis and Assumptions, matching the other tools.
+- Home Help section completed: Short Circuit Calculator, Transient Analysis, Arc Flash Estimator and Protection Coordination added, so all eleven tools and the libraries are covered.
+- Arc Flash and Protection Coordination: History moved off the header — it lives on the bottom tab bar only.
+- Protection Coordination: selecting a relay thermal curve now shows that relay's thermal formula with each term defined and a worked trip time at six times full load.
+- Protection Coordination: Study settings moved from the Downstream tab to the top of the Result tab; the third-device option moved to the bottom of the Upstream tab.
+
+## V3.5
+
+### Protection Coordination — feeder types
+- Each position now carries a feeder type. Downstream offers Motor, Transformer or Power feeder; the middle and upstream positions offer Transformer primary or Power feeder only, since a motor can only sit at the bottom of a chain.
+- Protective device choices are now Relay 50/51, MCCB LSIG and HRC fuse at every position, picked from the library or entered by hand.
+- A motor feeder takes a nameplate block: rated output, voltage, power factor, efficiency, full-load current (or derived from kW), locked-rotor multiple and start time. The starting envelope and hot thermal curve follow those figures, and the overlay panel stops asking for them twice.
+- With Relay 50/51 on a motor feeder, the relay's own thermal curve can be selected — ABB REM, Siemens 7UM, Easergy P3M32, SEL-710, Schneider LTMR or SEPAM M87 — each seeded with its heating time constant and permitted overload, editable, plotted as an IEC 60255-8 thermal replica against the prior load.
+- A transformer-primary feeder takes rating, impedance and both winding voltages. The damage curve is referred from the primary current to the chart base, which is always the downstream device's voltage (taken from the motor nameplate when the downstream feeder is a motor).
+- Chart base voltage is shown on the current axis.
+
+### Libraries
+- The Protection Settings editor now states what each generic curve is modelled on, including the MCCB T-M reference (thermal-magnetic moulded-case breaker of the Schneider NSX / ABB Tmax XT class) and the LSIG reference (Micrologic / Ekip class electronic trip unit).
 
 ## V3.4
 

@@ -7,6 +7,19 @@ date: 2026-11-10T00:00:00Z
 commit: (unknown — repository not connected)
 
 ### Updated in this project
+- Bottom tab bars fill the safe-area strip in every tool; Home screen gap removed.
+- Coordination chart gained marked decade and 2/5 scales on both axes; Help lists the formula for every curve type.
+- Launch animation extended to 2 s; CPP Sizer icon redrawn from the supplied sketch; overlay reference curves now default to off.
+- App version V3.8; service-worker cache `electrical-tools-gh-v3-4-9`.
+- Input tabs shortened: number fields pair two to a line in Protection Coordination, Arc Flash, Motor Starting, CPP Sizer and Generator Operating Point; summary chips added to the Coordination device tabs. Touch targets unchanged at 44-46 px.
+- App version V3.7; service-worker cache `electrical-tools-gh-v3-4-8`.
+- Help button on Short Circuit, Motor Starting, Arc Flash and Protection Coordination (How to use / Basis / Assumptions); Home Help section completed so every tool is covered.
+- Arc Flash and Protection Coordination: History removed from the header, kept on the bottom tab bar.
+- Protection Coordination: relay thermal formula shown under the selected relay; Study settings moved to the top of the Result tab; third-device option moved to the bottom of the Upstream tab.
+- App version V3.6; service-worker cache `electrical-tools-gh-v3-4-7`.
+- Protection Coordination: feeder type per position (Motor / Transformer / Power feeder downstream; Transformer primary / Power feeder upstream and middle), device choice narrowed to Relay 50/51, MCCB LSIG and HRC fuse, motor nameplate block feeding the starting and thermal overlays, six selectable relay thermal curves (ABB REM, Siemens 7UM, Easergy P3M32, SEL-710, Schneider LTMR, SEPAM M87), and transformer data with both winding voltages referred to the downstream chart base.
+- Protection Settings library now states the reference model behind each generic curve (MCCB T-M, LSIG, fuse, relay, O/L).
+- App version V3.5; service-worker cache `electrical-tools-gh-v3-4-6`.
 - Homepage icons redrawn: Motor Starting (motor + inrush trace), Protection Coordination (concave TCC pair), Generator Operating Point (G + capability curve), Switchgear Sizing (panel plan view), CPP Sizer (turbine, HRSG, stack).
 - Arc Flash and Protection Coordination now carry the standard Calculate / Export / History bottom tab bar; Coordination gained a dedicated Export tab (CSV, share summary, save case).
 - Coordination plot retheming: white plot ground, green dotted log grid, blue solid downstream, black dash-dot middle, red dashed upstream, and distinct colours for the reference overlays.
