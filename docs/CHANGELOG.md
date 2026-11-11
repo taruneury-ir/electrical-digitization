@@ -1,6 +1,40 @@
 # Electrical Engineering Suite — change log
 
-App version V3.8 · service-worker cache `electrical-tools-gh-v3-4-9`
+App version V3.9.5 · service-worker cache `electrical-tools-gh-v3-5-5`
+
+## V3.9.5
+- The save button read "Save case" in Protection Coordination, Short Circuit Calculator and Arc Flash Estimator while the other eight tools read "Save Project". One action, one name: it is Save Project everywhere.
+
+## V3.9.4
+- Protection Coordination: the largest motor on a Power feeder now asks only for starting current and duration. Starting power factor is gone; the peak load and the start are added arithmetically, which is the conservative case a feeder setting should survive.
+- Protection Coordination: the switchboard overlay is per feeder. Each Power feeder gets its own button at the foot of the Result tab, named for that feeder's tag — "Show TR-1 INCOMER on chart" — off until switched on, and each board draws in its own colour. The single tick box at the top of the Result tab is gone.
+- Save Project now stays pinned at the top of the Result tab in every tool while the result scrolls. It had been nested inside a short button group in eight of them, so it only stuck within that group. Save Case and Save Project were the same action under two names; the button reads Save Project everywhere.
+
+## V3.9.3
+- Every label inside an SVG drawing was invisible, across six tools: the coordination chart's axis values, the switchgear arrangement's bus and section labels, the single-line diagrams in RoCoF/Nadir, Transient Analysis and CPP Sizer, and the source glyphs in the Short Circuit Calculator. The text was present in the markup but painted nothing on screen. Labels are now built as real SVG text and render everywhere.
+
+## V3.9.2
+- iPhone: the bare strip under the bottom tab bar is gone. The PWA shell is now pinned to the viewport itself instead of sizing a padded body by percentage.
+- Protection Coordination: a Power feeder now takes the peak load on its bus, the bus power factor, and the largest motor that starts there with its starting current, duration and starting power factor. The setting is checked to pick up above the peak load and to ride through the combined current for the start duration, and a Switchboard loading overlay can be switched on from the Result tab to show it on the chart.
+- Protection Coordination: the relay curve list is IEC 60255-151 (Long Time / Standard / Very / Extremely Inverse, Definite Time) and the time setting reads Time multiplier TMS. The list had still been offering the IEEE C37.112 shapes with a time dial. Same correction in the Arc Flash Estimator device block and the Protection Settings library note.
+- Protection Coordination chart: decade labels on both axes raised to 11 px bold and the 2 / 5 sub-division labels to 9 px, so the values can be read on a phone.
+- Save case now sits at the top of the Result tab in every tool and stays pinned while the result scrolls. Short Circuit Calculator's copy moved off the Export tab; Arc Flash and Protection Coordination gained one.
+- Short Circuit Calculator: the Export tab no longer rendered the Calculate step panes underneath it.
+
+### Still to come
+- Detailed PDF report and 1-page PDF report as separate buttons on every tool's Export tab.
+
+## V3.9.1
+- Protection Coordination Help: the Basis page opens with an "In this case" block listing the formulas actually in play — the IEC shape and constants of every relay in the chain, and the equation behind each overlay switched on.
+- Coordination Basis references corrected to IEC 60255-151 for the inverse-time equations (the entry still read IEEE C37.112).
+
+## V3.9
+- Relay curves changed from IEEE C37.112 to IEC 60255-151: Long Time Inverse (k = 120, α = 1), Standard Inverse (k = 0.14, α = 0.02), Very Inverse (k = 13.5, α = 1) and Extremely Inverse (k = 80, α = 2), with t = TMS · k / ((I/Is)^α − 1). The relay time setting is now the time multiplier TMS, not a time dial, and the suggested-settings search steps TMS in 0.05 increments. Protection Settings library entries and all worked examples reseeded accordingly.
+- Protection Coordination: motor full-load current is calculated from the nameplate (kW, voltage, power factor, efficiency) and shown as a read-only field — it can no longer be typed over.
+- Home Help section: every tool topic now carries a Formulas used block listing the equations behind it, grouped by stage. The Protection Coordination topic and the in-tool Basis page both carry the IEC curve constants.
+
+### Migration note
+A saved case or library entry created before V3.9 keeps its numeric time setting, which is now read as TMS. A relay saved with a time dial of 3 will read TMS 3 and plot far slower than intended — check and reset the time setting on any case carried over.
 
 ## V3.8
 - Bottom tab bars now grow into the device safe area instead of reserving blank space under them, so the last row of buttons sits lower and the bar background fills the strip. Applied to every tool.
