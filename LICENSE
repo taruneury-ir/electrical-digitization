@@ -1,0 +1,20 @@
+Copyright (c) 2026 Tarun Goel. All rights reserved.
+
+This software and associated files are proprietary. No licence is granted
+to use, copy, modify, merge, publish, distribute, sublicense or sell copies
+of this software except with the prior written permission of the owner.
+
+Electrical Engineering Suite (EES) is a calculation aid. Results, PASS/FAIL
+indications and library values must be independently checked against project
+design criteria, manufacturer data and applicable standards by a competent
+engineer before being used for any design, procurement, construction or
+operational decision.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+Third-party notices
+-------------------
+Includes React and ReactDOM, (c) Meta Platforms, Inc. and affiliates,
+MIT licence.
