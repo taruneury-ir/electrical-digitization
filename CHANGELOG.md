@@ -1,6 +1,11 @@
 # Electrical Engineering Suite — change log
 
-App version V3.10 · service-worker cache `electrical-tools-gh-v3-6-0`
+App version V3.11 · service-worker cache `electrical-tools-gh-v3-7-0`
+
+## V3.11 — coordination guidance, flow diagrams and the chart on reports
+- Protection Coordination: both PDF reports (detailed and 1-page) now carry the time-current chart with its legend, so the printed study shows the curves it judges.
+- Protection Coordination: a nine-step coordination procedure added to the tool's Basis tab and to the Protection Coordination topic in the home Help.
+- Every tool's help — the "How to use" tab and its home Help topic — now opens with a calculation-flow block diagram of the steps that sizing or study follows.
 
 ## V3.10 — two report depths everywhere
 - Every tool's Export tab now offers **Detailed PDF report** and **1-page PDF report**. The detailed sheet is the full study; the 1-page sheet drops the inputs block, the supporting tables and the charts, keeping the verdict and the headline results.
